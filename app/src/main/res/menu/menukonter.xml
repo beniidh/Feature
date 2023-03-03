@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/kirimsaldo"
+        android:icon="@drawable/ic_baseline_home"
+        android:title="Kirim Saldo" />
+    <item
+        android:id="@+id/markup"
+        android:icon="@drawable/ic_baseline_home"
+        android:title="Mark up" />
+
+    <item
+        android:id="@+id/tariksaldo"
+        android:icon="@drawable/ic_baseline_home"
+        android:title="Tarik Saldo" />
+
+
+</menu>

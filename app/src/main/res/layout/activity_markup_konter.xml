@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="18dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".konter.MarkupKonter.MarkupKonter">
+
+    <TextView
+        android:id="@+id/namakirim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/opensanssemisold"
+        android:text="Markup Konter : Beni Cell"
+        android:textSize="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:fontFamily="@font/opensansreguler"
+        android:text="Markup (Rp)"
+        android:textSize="17dp" />
+
+    <EditText
+        android:id="@+id/nominalMarkup"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_marginTop="10sp"
+        android:fontFamily="@font/opensansreguler"
+        android:background="@drawable/bg_edittextlogin"
+        android:hint="Masukan Nominal"
+        android:textSize="15dp"
+        android:inputType="number"
+        android:paddingStart="5sp" />
+
+    <TextView
+        android:id="@+id/jumlahTransferK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingVertical="3dp"
+        android:textSize="15dp"
+        />
+
+    <Button
+        android:id="@+id/buttonMarkupKonter"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_marginTop="25sp"
+        android:background="@drawable/bg_button_login2"
+        android:text="Simpan"
+        android:fontFamily="@font/opensanssemisold"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+
+</LinearLayout>

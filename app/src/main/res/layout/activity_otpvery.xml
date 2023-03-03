@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Modal.OtpInsert">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="18dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/masukan_otp"
+            android:fontFamily="@font/opensanssemisold"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="19dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:text="@string/otpveryf"
+          android:fontFamily="@font/opensansreguler"
+            android:textAlignment="center"
+            android:textSize="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.chaos.view.PinView
+                android:id="@+id/otpverify"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cursorVisible="true"
+                android:itemBackground="@drawable/bg_search_otp"
+                android:inputType="number"
+                android:textColor="@color/green"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                app:cursorColor="@color/green"
+                app:cursorWidth="2dp"
+                app:hideLineWhenFilled="true"
+                app:itemCount="6"
+                app:itemHeight="48dp"
+                app:itemRadius="4dp"
+                app:itemSpacing="4dp"
+                app:itemWidth="48dp"
+                app:lineWidth="3dp"
+                app:viewType="rectangle"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/VerifikasiOTP"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/bg_button_login2"
+            android:fontFamily="@font/opensanssemisold"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="@string/verifikasi"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

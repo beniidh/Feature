@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".TopUpSaldoku.HistoryTopUp.ActivityHistoryTopUp">
+
+    <EditText
+        android:id="@+id/tanggaltopup"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:focusable="false"
+        android:paddingStart="20dp"
+        android:textSize="17dp"
+        android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+        android:background="@drawable/bg_button_login"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/linTopup"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        tools:listitem="@layout/list_history_topup"
+        android:layout_height="match_parent"/>
+</LinearLayout>

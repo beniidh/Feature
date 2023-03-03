@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="18dp"
+    tools:context=".Profil.UbahProfil">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/UbahProfil"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:elevation="3dp"
+                android:src="@drawable/plus"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imageView"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:contentDescription="Konter Jaya"
+                android:elevation="1dp"
+                app:cardCornerRadius="35dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/iconprofile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/namaprofil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:fontFamily="@font/opensanssemisold"
+                android:text="Perbarui Profil"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_putih"
+        android:elevation="2dp"
+        android:padding="15dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensanssemisold"
+                android:text="Nama"
+                android:textColor="@color/green"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/editnamaprofil"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edittextlogin"
+                android:hint="Nama"
+                android:paddingStart="10sp"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tvKonterName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensanssemisold"
+                android:text="Nama Konter"
+                android:textColor="@color/green"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/editnamakonter"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edittextlogin"
+                android:hint="Nama Konter"
+                android:paddingStart="10sp"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tvPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/opensanssemisold"
+                android:text="Nomor Telepon"
+                android:textColor="@color/green"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/editnomortelpon"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edittextlogin"
+                android:enabled="false"
+                android:hint="Nomor Telepon"
+                android:paddingStart="10sp"
+                android:textColor="@color/gray3"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/opensanssemisold"
+                android:text="Email"
+                android:textColor="@color/green"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/editemail"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edittextlogin"
+                android:enabled="false"
+                android:hint="Email"
+                android:paddingStart="10sp"
+                android:textColor="@color/gray3"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/opensanssemisold"
+                android:text="Alamat"
+                android:textColor="@color/green"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/editalamat"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edittextlogin"
+                android:hint="Alamat"
+                android:paddingStart="10sp"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/opensanssemisold"
+                android:text="Provinsi"
+                android:visibility="gone"
+                android:textColor="@color/green"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/editprovinsi"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:background="@drawable/bg_edittextlogin"
+                android:focusable="false"
+                android:hint="Provinsi"
+                android:paddingStart="10sp"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/opensanssemisold"
+                android:text="Kabupaten/Kota"
+                android:visibility="gone"
+                android:textColor="@color/green"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/editkabupaten"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edittextlogin"
+                android:focusable="false"
+                android:visibility="gone"
+                android:hint="Kaupaten / Kota"
+                android:paddingStart="10sp"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/opensanssemisold"
+                android:text="Kecamatan"
+                android:visibility="gone"
+                android:textColor="@color/green"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/editkecamatan"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edittextlogin"
+                android:focusable="false"
+                android:hint="Kecamatan"
+                android:visibility="gone"
+                android:paddingStart="10sp"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/opensanssemisold"
+                android:text="Kelurahan"
+                android:visibility="gone"
+                android:textColor="@color/green"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/editkelurahan"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edittextlogin"
+                android:focusable="false"
+                android:visibility="gone"
+                android:hint="Kelurahan"
+                android:paddingStart="10sp"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/opensanssemisold"
+                android:text="Kode Pos"
+                android:visibility="gone"
+                android:textColor="@color/green"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/editkodepos"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edittextlogin"
+                android:focusable="false"
+                android:hint="Kode Pos"
+                android:visibility="gone"
+                android:paddingStart="10sp"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/saveedit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="30sp"
+                android:background="@drawable/bg_button_login2"
+                android:text="Simpan"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

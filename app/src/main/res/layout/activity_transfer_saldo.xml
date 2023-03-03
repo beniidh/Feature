@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="19dp"
+    tools:context=".Transfer.TransferKonter">
+
+    <LinearLayout
+        android:id="@+id/lineartransfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/namakirim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensanssemisold"
+            android:text="Kirim saldo : Beni Cell"
+            android:textSize="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:fontFamily="@font/opensansreguler"
+            android:text="Nominal Saldo (Rp)"
+            android:textSize="17dp" />
+
+        <EditText
+            android:id="@+id/nominalkirimSaldo"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/bg_edittextlogin"
+            android:hint="Masukan Nominal"
+            android:inputType="number"
+            android:textSize="17dp"
+            android:fontFamily="@font/opensansreguler"
+            android:paddingStart="5sp" />
+
+        <TextView
+            android:id="@+id/jumlahTransferK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="17dp"
+            android:paddingVertical="3dp" />
+
+        <Button
+            android:id="@+id/buttonTransferSaldo"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:layout_marginTop="25sp"
+            android:background="@drawable/bg_button_login2"
+            android:text="Kirim Saldo"
+            android:fontFamily="@font/opensanssemisold"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lineartransfer"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20sp"
+        android:scrollbars="none">
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

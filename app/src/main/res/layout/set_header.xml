@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukan Teks :"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <EditText
+        android:id="@+id/EFooter"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="5sp"
+        android:maxLines="3"
+        android:maxLength="35"
+        android:textSize="14dp"
+        android:text=""
+        android:layout_marginHorizontal="10sp"
+        android:background="@drawable/bg_edittextlogin"
+        android:paddingStart="4dp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Maksimal 35 karakter)"
+        android:textSize="10dp"
+        android:layout_marginLeft="11dp"
+        />
+    <Button
+        android:id="@+id/BEFoter"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_button_login2"
+        android:layout_gravity="end"
+        android:text="Simpan"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+
+        />
+
+
+
+</LinearLayout>

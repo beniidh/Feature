@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "363245492316",
+    "project_id": "arrifai-reload",
+    "storage_bucket": "arrifai-reload.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363245492316:android:b2f34dd0a06c2c408aae99",
+        "android_client_info": {
+          "package_name": "com.c.cpayid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363245492316-b6knakf90segc3ptl33f84j0j818annn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATJqU1lnCl24PQZrQT6L82mrl6vnLTfjs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "363245492316-b6knakf90segc3ptl33f84j0j818annn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363245492316:android:25b1bfef64c06b0a8aae99",
+        "android_client_info": {
+          "package_name": "com.c.cpayid.feature"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363245492316-b6knakf90segc3ptl33f84j0j818annn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATJqU1lnCl24PQZrQT6L82mrl6vnLTfjs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "363245492316-b6knakf90segc3ptl33f84j0j818annn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

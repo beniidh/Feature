@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18sp"
+    android:orientation="vertical"
+    tools:context=".TagihanKonter.TagihanKonter">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daftar Tagihan Konter"
+        android:textSize="16dp"
+        android:fontFamily="@font/opensanssemisold"
+        android:textColor="@color/black"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="7dp"
+        android:background="@color/gray3"
+        />
+    <EditText
+        android:id="@+id/TanggalFilter"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:focusable="false"
+        android:textSize="17dp"
+        android:textColor="@color/gray4"
+        android:fontFamily="@font/opensansreguler"
+        android:paddingStart="15dp"
+        android:paddingVertical="2dp"
+        android:hint="Tanggal"
+        android:layout_marginTop="5dp"
+        android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+        android:background="@drawable/bg_edittextlogin"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/ReyTagihanKonter"
+        android:layout_marginTop="15dp"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

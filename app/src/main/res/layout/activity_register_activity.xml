@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="18dp"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_marginTop="18dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/opensanssemisold"
+                android:textSize="14dp"
+                android:text="@string/nama_pemilikd"
+                />
+            <EditText
+                android:id="@+id/namapemilik"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/opensansreguler"
+                android:textSize="16dp"
+                android:hint="@string/masukan_nama_pemilikd"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/opensanssemisold"
+                android:textSize="14dp"
+                android:text="@string/nama_konterd"
+                />
+            <EditText
+                android:id="@+id/namakonter"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:fontFamily="@font/opensansreguler"
+                android:textSize="16dp"
+                android:hint="@string/masukan_nama_konterd"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensanssemisold"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:text="@string/emaild"
+                />
+            <EditText
+                android:id="@+id/emailRegis"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="16dp"
+                android:fontFamily="@font/opensansreguler"
+                android:hint="@string/masukan_emaild"
+                android:autofillHints="" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/opensanssemisold"
+                android:textSize="14dp"
+                android:text="@string/alamatd"
+                />
+            <EditText
+                android:id="@+id/alamatRegis"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:textSize="16dp"
+                android:hint="Masukan Alamat"
+                android:fontFamily="@font/opensansreguler"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:visibility="gone"
+                android:fontFamily="@font/opensanssemisold"
+                android:text="@string/provinsid"
+                />
+            <EditText
+                android:id="@+id/provinsi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="0"
+                android:visibility="gone"
+                android:fontFamily="@font/opensansreguler"
+                android:textSize="16dp"
+                android:hint="@string/pilih_provinsid"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:visibility="gone"
+                android:fontFamily="@font/opensanssemisold"
+                android:text="@string/kabupaten_kotad"
+                />
+            <EditText
+                android:id="@+id/kabupaten"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"
+                android:textSize="16dp"
+                android:fontFamily="@font/opensansreguler"
+                android:hint="@string/pilih_kabupaten_kotad"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:visibility="gone"
+                android:fontFamily="@font/opensanssemisold"
+                android:text="@string/kecamatand"
+                />
+
+            <EditText
+                android:id="@+id/kecamatan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="16dp"
+                android:visibility="gone"
+                android:fontFamily="@font/opensansreguler"
+                android:hint="@string/pilih_kecamatand"
+                android:autofillHints=""
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:visibility="gone"
+                android:fontFamily="@font/opensanssemisold"
+                android:text="@string/kelurahand"
+                />
+
+            <EditText
+                android:id="@+id/kelurahan"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="16dp"
+                android:visibility="gone"
+                android:fontFamily="@font/opensansreguler"
+                android:hint="@string/pilih_kelurahand"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:visibility="gone"
+                android:fontFamily="@font/opensanssemisold"
+                android:text="@string/kode_posf"
+                />
+
+            <EditText
+                android:id="@+id/postCode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="16dp"
+                android:visibility="gone"
+                android:fontFamily="@font/opensansreguler"
+                android:hint="@string/pilih_kode_posd"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/opensanssemisold"
+                android:textSize="14dp"
+                android:text="@string/nomor_hanphoned"
+                />
+            <TextView
+                android:id="@+id/tvDescNomor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensansreguler"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/green"
+                android:textSize="12dp"
+                android:text="@string/nomor_yang_dimasukan_digunakan_untuk_logind"
+                />
+
+            <TextView
+                android:id="@+id/tvDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensansreguler"
+                android:layout_marginTop="3dp"
+                android:textColor="@color/green"
+                android:textSize="12dp"
+                android:text="Pastikan nomor yang didaftarkan memiliki WhatsApp aktif untuk menerima kode OTP"
+                />
+            <EditText
+                android:id="@+id/PhoneRegis"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="16dp"
+                android:inputType="number"
+                android:fontFamily="@font/opensansreguler"
+                android:layout_marginTop="4dp"
+                android:hint="@string/masukan_nomord"
+                tools:ignore="TextFields" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:fontFamily="@font/opensanssemisold"
+                android:textSize="14dp"
+                android:text="@string/kode_referal_sales"
+                />
+            <EditText
+                android:id="@+id/referalcodeRegis"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="16dp"
+                android:fontFamily="@font/opensansreguler"
+                android:hint="@string/masukan_kode_referal"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:fontFamily="@font/opensanssemisold"
+                android:textSize="14dp"
+                android:text="@string/server_id"
+                />
+
+            <EditText
+                android:id="@+id/serverID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textSize="16dp"
+                android:text="@string/SRVID00000060"
+                android:focusable="false"
+                android:visibility="gone"
+                android:fontFamily="@font/opensansreguler"
+                android:hint="@string/pilih_server"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:id="@+id/progressRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:visibility="gone"
+                    android:layout_marginTop="23dp"
+                    />
+
+                <Button
+                    android:id="@+id/Register_Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="45dp"
+                    android:background="@drawable/bg_button_login2"
+                    android:fontFamily="@font/opensanssemisold"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:onClick="Register"
+                    android:text="@string/selanjutnya"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

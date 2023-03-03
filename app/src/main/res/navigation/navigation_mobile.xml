@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.c.cpayid.feature.Fragment.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/home_fragment" />
+
+    <fragment
+        android:id="@+id/transaksi"
+        android:name="com.c.cpayid.feature.Fragment.TransaksiFragment"
+        android:label="Transaksi"
+        tools:layout="@layout/transaksi_fragment" />
+
+    <fragment
+        android:id="@+id/chat"
+        android:name="com.c.cpayid.feature.Fragment.ChatFragment"
+        android:label="Chat"
+        tools:layout="@layout/chat_fragment" />
+
+
+
+
+</navigation>

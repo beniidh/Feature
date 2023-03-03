@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="18dp"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!--    <View-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="1dp"-->
+        <!--        android:layout_marginBottom="10dp"-->
+        <!--        android:background="@color/gray2"-->
+        <!--        />-->
+        <!--    <LinearLayout-->
+        <!--        android:foreground="?android:attr/selectableItemBackground"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:onClick="LinDaftarHarga"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:clickable="true"-->
+        <!--        android:orientation="horizontal">-->
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="25dp"-->
+        <!--            android:layout_height="25dp"-->
+        <!--            android:src="@drawable/list"/>-->
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:text="Daftar Harga"-->
+        <!--            android:textColor="@color/green"-->
+        <!--            android:gravity="center"-->
+        <!--            android:fontFamily="sans-serif-medium"-->
+        <!--            android:textSize="16sp"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            />-->
+
+        <!--    </LinearLayout>-->
+        <!--    <View-->
+        <!--        android:layout_marginTop="10dp"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="1dp"-->
+        <!--        android:layout_marginBottom="10dp"-->
+        <!--        android:background="@color/gray2"-->
+        <!--        />-->
+        <!--    <LinearLayout-->
+        <!--        android:foreground="?android:attr/selectableItemBackground"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:clickable="true"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:orientation="horizontal">-->
+        <!--        <ImageView-->
+        <!--            android:layout_width="25dp"-->
+        <!--            android:layout_height="25dp"-->
+        <!--            android:src="@drawable/currency"/>-->
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:text="Pengajuan Saldo Server"-->
+        <!--            android:fontFamily="sans-serif-medium"-->
+        <!--            android:textSize="16sp"-->
+        <!--            android:textColor="@color/green"-->
+        <!--            android:gravity="center"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            />-->
+
+        <!--    </LinearLayout>-->
+        <!--    <View-->
+        <!--        android:layout_marginTop="10dp"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="1dp"-->
+        <!--        android:layout_marginBottom="10dp"-->
+        <!--        android:background="@color/gray2"-->
+        <!--        />-->
+        <!--    <LinearLayout-->
+        <!--        android:foreground="?android:attr/selectableItemBackground"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:clickable="true"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:orientation="horizontal">-->
+        <!--        <ImageView-->
+        <!--            android:layout_width="25dp"-->
+        <!--            android:layout_height="25dp"-->
+        <!--            android:src="@drawable/printer"/>-->
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:text="Cetak Struk"-->
+        <!--            android:fontFamily="sans-serif-medium"-->
+        <!--            android:textSize="16sp"-->
+        <!--            android:textColor="@color/green"-->
+        <!--            android:gravity="center"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            />-->
+
+        <!--    </LinearLayout>-->
+        <!--    <View-->
+        <!--        android:layout_marginTop="10dp"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="1dp"-->
+        <!--        android:layout_marginBottom="10dp"-->
+        <!--        android:background="@color/gray2"-->
+        <!--        />-->
+        <!--    <LinearLayout-->
+        <!--        android:foreground="?android:attr/selectableItemBackground"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:clickable="true"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:orientation="horizontal">-->
+        <!--        <ImageView-->
+        <!--            android:layout_width="25dp"-->
+        <!--            android:layout_height="25dp"-->
+        <!--            android:src="@drawable/code"/>-->
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:text="Kode Produk"-->
+        <!--            android:fontFamily="sans-serif-medium"-->
+        <!--            android:textSize="16sp"-->
+        <!--            android:textColor="@color/green"-->
+        <!--            android:gravity="center"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            />-->
+
+        <!--    </LinearLayout>-->
+        <!--    <View-->
+        <!--        android:layout_marginTop="10dp"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="1dp"-->
+        <!--        android:layout_marginBottom="10dp"-->
+        <!--        android:background="@color/gray2"-->
+        <!--        />-->
+        <!--    <LinearLayout-->
+        <!--        android:foreground="?android:attr/selectableItemBackground"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:clickable="true"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:orientation="horizontal">-->
+        <!--        <ImageView-->
+        <!--            android:layout_width="25dp"-->
+        <!--            android:layout_height="25dp"-->
+        <!--            android:src="@drawable/info"/>-->
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:text="Tentang Kami"-->
+        <!--            android:fontFamily="sans-serif-medium"-->
+        <!--            android:textSize="16sp"-->
+        <!--            android:textColor="@color/green"-->
+        <!--            android:gravity="center"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            />-->
+
+        <!--    </LinearLayout>-->
+        <!--    <View-->
+        <!--        android:layout_marginTop="10dp"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="1dp"-->
+        <!--        android:layout_marginBottom="10dp"-->
+        <!--        android:background="@color/gray2"-->
+        <!--        />-->
+        <!--    <LinearLayout-->
+        <!--        android:foreground="?android:attr/selectableItemBackground"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:clickable="true"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:orientation="horizontal">-->
+        <!--        <ImageView-->
+        <!--            android:layout_width="25dp"-->
+        <!--            android:layout_height="25dp"-->
+        <!--            android:src="@drawable/question"/>-->
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:text="Syarat dan Ketentuan"-->
+        <!--            android:fontFamily="sans-serif-medium"-->
+        <!--            android:textSize="16sp"-->
+        <!--            android:textColor="@color/green"-->
+        <!--            android:gravity="center"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            />-->
+
+        <!--    </LinearLayout>-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ReySubMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:itemCount="15"
+            tools:listitem="@layout/listmenu_sidebar" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/gray2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="Kebijakan"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_baseline_policy_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/opensanssemisold"
+                android:gravity="center"
+                android:text="Kebijakan Layanan"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="LinKeluar"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/exit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/miriamlibrebold"
+                android:gravity="center"
+                android:text="Keluar"
+                android:textColor="@color/red"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+        <!--    <View-->
+        <!--        android:layout_marginTop="10dp"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="1dp"-->
+        <!--        android:layout_marginBottom="10dp"-->
+        <!--        android:background="@color/gray2"-->
+        <!--        />-->
+
+    </LinearLayout>
+</ScrollView>

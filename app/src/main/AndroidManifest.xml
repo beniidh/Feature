@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.c.cpayid.feature">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="29" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <queries>
+        <package android:name="com.whatsapp" />
+        <package android:name="org.telegram.messenger" />
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DompetAbata"
+        android:usesCleartextTraffic="true"
+        android:largeHeap="true"
+        tools:ignore="LockedOrientationActivity">
+
+        <activity
+            android:name="com.c.cpayid.feature.TopUpSaldoku.MetodeBayar.QrisActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.c.cpayid.feature.TopUpSaldoku.MetodeBayar.VAMethodActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.c.cpayid.feature.TopUpSaldoku.HistoryTopUp.UploadBukti"
+            android:exported="false" />
+        <activity
+            android:name="com.c.cpayid.feature.TopUpSaldoku.HistoryTopUp.ActivityHistoryTopUp"
+            android:exported="false" />
+        <activity
+            android:name="com.c.cpayid.feature.CetakStruk.StrukPLNPra.CetakBank"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.Fragment.DirectLink.WebDirectActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.menuUtama.ListrikPLN.GroupPLN"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.Notifikasi.Pesan.DetailPesanActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.c.cpayid.feature.menuUtama.HolderPulsa.ProductHolderGame"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.c.cpayid.feature.menuUtama.HolderPulsa.ProductHolderPascaPdam"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.c.cpayid.feature.konter.DrawSaldo.DrawMyBalance"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.TarikKomisi.TarikKomisiSalesActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.menuUtama.HolderPulsa.GroupHolderActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.konter.MarkupKonter.MarkupKonter"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.konter.KirimSaldo.TransferSaldo"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.OtpVerify"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.konter.TambahKonter"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.CetakStruk.StrukPLNPra.CetakPlnPra"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.CetakStruk.StrukPLNPasca.CetakPlnPasca"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.reseller.PilihMetodeBayar"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.reseller.PersetujuanSaldokuReseller"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.pinNew.PinTransaction"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.pinNew.PinNew"
+            android:exported="true"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="com.c.cpayid.feature.drawer_activity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.c.cpayid.feature.MarkUP.markupSpesifik.MarkUpSpesifikActi"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.Fragment.RekapSaldo.RekapSaldoActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.MarkUP.markupSpesifik.MarkupSpesifikActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.TransferBank.MetodeBayarBank"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.TransferBank.TransferBank"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.TagihanKonterSales.TagihanKonterBySales"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.KomisiSales.KomisiSales"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.konter.KonterActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.menuUtama.HolderPulsa.ProdukHolderPasca"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.menuUtama.HolderPulsa.Produkholder"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.menuUtama.HolderPulsa.HolderPulsaActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" /> <!-- <meta-data -->
+        <!-- android:name="io.sentry.dsn" -->
+        <!-- android:value="https://c7552e566d0148ef9d067b45fc46742b@o505958.ingest.sentry.io/5965814" /> -->
+        <activity android:name="com.c.cpayid.feature.Transfer.TransferKonter" />
+        <activity
+            android:name="com.c.cpayid.feature.PendingActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="com.c.cpayid.feature.drawer_activity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.c.cpayid.feature.TagihanKonter.DetailTagihanKonter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.TagihanKonter.TagihanKonter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.MarkUP.Markup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.CetakStruk.Cetak"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.Inquiry.InquiryPasca"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.GantiPin"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.c.cpayid.feature.Notifikasi.MyService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.c.cpayid.feature.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_base" />
+        </provider>
+
+        <activity
+            android:name="com.c.cpayid.feature.ResetPIN"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.PersetujuanSaldoSales.DetailPersetujuan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.TambahKonter.AddKonter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.PersetujuanSaldoSales.PersetujuanSaldoSales"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.SaldoServer.AjukanLimit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.Fragment.RiwayatTransaksi.HistoryTransaksi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.Notifikasi.DetailNotifikasi"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.TentangKami.TentangKamiAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.KodeProduk.KodeProdukAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.CetakStruk.DetailTransaksiTruk"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.CetakStruk.CetakStruk"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.DaftarHarga.DaftarHargaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.PengajuanLimit.PengajuanDompet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.menuUtama.WarungAbata.ProdukWarungAbata"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.menuUtama.PajakPBB.ProdukPajakPBB"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.menuUtama.GasNegara.ProdukGasnegara"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.menuUtama.AngsuranKredit.ProdukAngsuranKredit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.menuUtama.BPJS.ProdukBPJS"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.menuUtama.Voucher.ProdukVoucher"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.menuUtama.TV.TvProduk"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.menuUtama.Internet.InternetProduk"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.menuUtama.VoucherGame.ProdukVoucherGame"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.menuUtama.air.ProdukAir"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.menuUtama.UangElektronik.ProdukUangElektronik"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.menuUtama.PaketsmsTelpon.ProdukSmsTelpon"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.menuUtama.ListrikPLNPasca.PlnProdukPasca"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.menuUtama.ListrikPLN.PlnProduk"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.menuUtama.Paket.PaketDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.Notifikasi.NotifikasiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.menuUtama.PulsaPrabayar.TransaksiPending"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.menuUtama.PulsaPrabayar.KonfirmasiPembayaran"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.menuUtama.PulsaPrabayar.PulsaPrabayarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.menuUtama.PulsaPascaBayar.PulsaPascaBayarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.Kodeproduk"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.SaldoServer.BayarSalesServer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.Profil.Device"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.Profil.Poin.Point"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.Profil.UbahPin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.Profil.UbahProfil"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.Profil.Profil"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.SaldoServer.RincianTagihan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.SaldoServer.RiwayatTagihan"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.SaldoServer.TopupSaldoServer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.TopUpSaldoku.TransferBank"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.SaldoServer.TransferBankServer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.Transaksi.BayarViaBank"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.TopUpSaldoku.BayarSales"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.InsertPinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.TopUpSaldoku.TopupSaldokuActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.HomeLainnya"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name="com.c.cpayid.feature.PinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.SyaratDanKetentuanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.RegisterFotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.Modal.OtpInsert"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.OtpSend"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.c.cpayid.feature.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="com.c.cpayid.feature.drawer_activity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.c.cpayid.feature.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+<!--                <action android:name="com.c.cpayid.feature.LoginActivity" />-->
+<!--                <category android:name="android.intent.category.DEFAULT" />-->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.c.cpayid.feature.DrawerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.DompetAbata2"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="com.c.cpayid.feature.drawer_activity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10sp"
+    android:layout_marginTop="20sp"
+    android:layout_marginBottom="50sp"
+    android:padding="10sp"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/produkNameMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/opensanssemisold"
+        android:hint="Produk : Indosat 5000"
+        android:textSize="17dp" />
+
+    <EditText
+        android:id="@+id/markupNilaiMS"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_edittextlogin"
+        android:hint="Masukan Markup"
+        android:inputType="number"
+        android:fontFamily="@font/opensansreguler"
+        android:paddingStart="9sp"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/markupButtonMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/bg_button_login2"
+        android:text="Simpan"
+        android:layout_marginBottom="30sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+</LinearLayout>

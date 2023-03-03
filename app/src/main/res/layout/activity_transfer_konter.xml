@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="19dp"
+    tools:context=".Transfer.TransferKonter">
+
+    <LinearLayout
+        android:id="@+id/lineartransfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensanssemisold"
+            android:text="Konter"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+        <EditText
+            android:id="@+id/konterid"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/bg_edittextlogin"
+            android:drawableRight="@drawable/ic_baseline_arrow_drop_down_24"
+            android:focusable="false"
+            android:textSize="18dp"
+            android:fontFamily="@font/opensansreguler"
+            android:hint="Pilih Konter"
+            android:paddingStart="5sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:fontFamily="@font/opensanssemisold"
+            android:text="Nominal Saldo (Rp)"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+        <EditText
+            android:id="@+id/nominalkirim"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/bg_edittextlogin"
+            android:hint="Masukan Nominal"
+            android:inputType="number"
+            android:textSize="18dp"
+            android:fontFamily="@font/opensansreguler"
+            android:paddingStart="5sp" />
+
+        <TextView
+            android:id="@+id/jumlahTransferK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingVertical="3dp"
+            />
+
+        <Button
+            android:id="@+id/buttonTransfer"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:layout_marginTop="45sp"
+            android:background="@drawable/bg_button_login2"
+            android:text="Kirim Saldo"
+            android:fontFamily="@font/opensanssemisold"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lineartransfer"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20sp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:fontFamily="@font/opensanssemisold"
+                android:text="Syarat dan Ketentuan"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:fontFamily="@font/opensansreguler"
+                android:text="1. Saldo yang telah dikirimkan bersifat sebagai tanggung jawab sales"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3sp"
+                android:fontFamily="@font/opensansreguler"
+                android:text="2. Sales yang mengirimkan saldo berupa saldoku atau saldo server menyetujui kebijakan dan peraturan perusahaan terkait"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3sp"
+                android:fontFamily="@font/opensansreguler"
+                android:text="3. Refund atau pengembalian saldo membutuhkan waktu 3x24 jam"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3sp"
+                android:fontFamily="@font/opensansreguler"
+                android:text="4. Kesalahan nominal pengiriman saldo ke konter menjadi tanggung jawab sales sepenuhnya"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

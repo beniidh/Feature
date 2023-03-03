@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fa_android">&#xf641;</string>
+    <string name="fa_pie_chart">&#xf200;</string>
+    <string name="fa_line_chart">&#xf201;</string>
+</resources>

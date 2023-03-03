@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="18dp"
+    tools:context=".DaftarHarga.DaftarHargaActivity">
+
+
+
+        <EditText
+            android:id="@+id/idprodukDaftarHarga"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Pilih Produk"
+            android:fontFamily="@font/opensansreguler"
+            android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+            android:layout_marginHorizontal="5dp"
+            android:background="@drawable/bg_edittextlogin"
+            android:focusable="false"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10dp"
+            android:textSize="16dp" />
+
+
+
+        <EditText
+            android:id="@+id/idProviderDaftarHarga"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Pilih Kategori"
+            android:fontFamily="@font/opensansreguler"
+            android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@drawable/bg_edittextlogin"
+            android:focusable="false"
+            android:paddingStart="10dp"
+            android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Daftar Harga"
+        android:fontFamily="@font/opensansreguler"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="3dp"
+        android:background="@color/gray3" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRecycleDaftarHarga"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

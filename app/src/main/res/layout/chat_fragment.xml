@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Fragment.ChatFragment">
+
+  <com.airbnb.lottie.LottieAnimationView
+      android:layout_width="match_parent"
+      android:layout_height="250dp"
+      app:lottie_url="https://assets10.lottiefiles.com/packages/lf20_bkksg8sb.json"
+      app:lottie_loop="true"
+      app:lottie_autoPlay="true"
+      android:layout_marginBottom="20dp"
+      />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/WaCenter"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray2"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="10dp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+
+            android:layout_marginTop="10dp"
+            android:src="@drawable/whatsapp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/opensansreguler"
+            android:text="WhatsApp CS"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+        <TextView
+            android:id="@+id/nomor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="gone"
+            android:textSize="13dp"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/gray2"
+            app:layout_constraintTop_toBottomOf="@+id/nomor"
+            tools:layout_editor_absoluteX="10dp" />
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.1"
+            android:src="@drawable/ic_baseline_navigate_next_24"
+            app:layout_constraintBottom_toTopOf="@+id/textView13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/teleGramCenter"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp">
+
+        <ImageView
+            android:id="@+id/TeleCS"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/telegram"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textTele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/opensansreguler"
+            android:text="Telegram CS"
+            app:layout_constraintBottom_toBottomOf="@+id/TeleCS"
+            app:layout_constraintStart_toEndOf="@+id/TeleCS"
+            app:layout_constraintTop_toTopOf="@+id/TeleCS" />
+
+        <TextView
+            android:id="@+id/nomorTele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="gone"
+            android:textSize="13dp"
+            app:layout_constraintStart_toStartOf="@+id/textTele"
+            app:layout_constraintTop_toBottomOf="@+id/textTele" />
+
+        <TextView
+
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/gray2"
+            app:layout_constraintTop_toBottomOf="@+id/nomorTele"
+            tools:layout_editor_absoluteX="10dp" />
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.1"
+            android:src="@drawable/ic_baseline_navigate_next_24"
+            app:layout_constraintBottom_toTopOf="@+id/textView14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/EmailCenter"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="10dp">
+
+        <ImageView
+            android:id="@+id/EmailCS"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/gmail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textGm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/opensansreguler"
+            android:text="Email CS"
+            app:layout_constraintBottom_toBottomOf="@+id/EmailCS"
+            app:layout_constraintStart_toEndOf="@+id/EmailCS"
+            app:layout_constraintTop_toTopOf="@+id/EmailCS" />
+
+        <TextView
+            android:id="@+id/AlamatGm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cs@gmail.com"
+            android:textSize="13dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/textGm"
+            app:layout_constraintTop_toBottomOf="@+id/textGm" />
+
+        <TextView
+
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/gray2"
+            app:layout_constraintTop_toBottomOf="@+id/AlamatGm"
+            tools:layout_editor_absoluteX="10dp" />
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.1"
+            android:src="@drawable/ic_baseline_navigate_next_24"
+            app:layout_constraintBottom_toTopOf="@+id/textView15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:elevation="2dp"
+            android:visibility="gone"
+            app:cardCornerRadius="5dp">
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10sp"
+                android:src="@drawable/telegram" />
+        </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+
+
+
+</LinearLayout>

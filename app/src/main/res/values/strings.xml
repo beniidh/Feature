@@ -1,0 +1,185 @@
+<resources>
+    <string name="app_name">Feature</string>
+    <string name="keteranganOTP">Untuk mendapatkan Kode OTP silahkan pilih salah satu metode dibawah ini :</string>
+    <string name="otp">Kode telah dikirim ke Email, silahkan cek Email Anda</string>
+    <string name="syaratketentuan">Terima kasih Anda telah mengakses situs atau mengunduh,
+        menggunakan layanan, produk dan/atau aplikasi (“Aplikasi”)  %1$s. Pada saat Anda
+        mengakses, mengunduh atau menggunakan Aplikasi  %2$s maka Syarat dan Ketentuan ini
+        berlaku terhadap Anda. Dengan melanjutkan mengakses, mengunduh atau menggunakan Aplikasi
+        %3$s, Anda mengakui dan menyetujui bahwa Anda telah membaca dengan teliti, memahami,
+        menerima dan menyetujui seluruh Syarat dan Ketentuan ini yang akan berlaku sebagai
+        perjanjian antara Anda dengan Kami. Aplikasi ini juga menampilkan daftar kontak anda untuk keperluan transaksi. Syarat dan Ketentuan ini juga berlaku setiap kali
+        Anda melakukan transaksi menggunakan Aplikasi  %4$s melalui mitra penyedia
+        platform lain yang menandatangani perjanjian kerjasama dengan Kami dan menggunakan
+        Aplikasi  %5$s sebagai salah satu metode pembayaran (“Partner  %6$s”)</string>
+
+    <string name="Open">buka</string>
+    <string name="Close">tutup</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="password_actual">123456</string>
+
+    <string name="userProfil">&#xea05;</string>
+    <string name="gantiPIN">&#xe98f;</string>
+    <string name="Point">&#xe9e1;</string>
+    <string name="Device">&#xe9dd;</string>
+
+    <string name="userabata">&#xea00;</string>
+    <string name="iconhome">&#xe980;</string>
+    <string name="icontransaksi">&#xe939;</string>
+    <string name="iconrekapsaldo">&#xe938;</string>
+    <string name="iconchat">&#xe999;</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+    <string name="saldoku">Saldoku</string>
+    <string name="pulsa">pulsa</string>
+    <string name="salessaldoku">Silahkan melakukan pembayaran ke Sales anda, jika ada kendala ketika melakukan pembayaran silahkan menghubungi CS</string>
+    <string name="nomdua">2. Informasikan pada Server nominal tagihan anda</string>
+    <string name="nom1">1. Hubungi Server Anda</string>
+    <string name="nom3">3. Berikan uang tunai sesuai nominal Tagihan</string>
+    <string name="nom4">4. Anda akan menerima Notifikasi Tagihan saldo server telah dibayar</string>
+    <string name="bank">Silakan lakukan transfer pembayaran ke nomor rekening yang tertera diatas maksimal 6 jam dari pengajuan. Untuk kendala Deposit, Hubungi CS</string>
+    <string name="va">Silakan lakukan transfer pembayaran ke nomor Virtual Account yang tertera diatas maksimal 6 jam dari pengajuan. Untuk kendala Deposit, Hubungi CS</string>
+    <string name="car1">1. Masukan kartu ATM dan PIN Rekening Anda</string>
+    <string name="car2">2. Pilih menu Transfer</string>
+    <string name="car3">3. Pilih bank yang dituju</string>
+    <string name="car4">4. Masukan nomor rekening Tujuan</string>
+    <string name="car6">6. Ikuti instruksi untuk menyelesaikan transaksi</string>
+    <string name="car5">5. Masukan nominal Tagihan</string>
+    <string name="selamat_datang_di_dompet_abata">Selamat Datang di  %1$s !</string>
+    <string name="saya_menerima_dan_menyetujui_syarat_dan_ketentuan_aplikasi">Saya menerima dan menyetujui Syarat dan Ketentuan Aplikasi</string>
+    <string name="silahkan_hubungi_cs_jika_dalam_1x24_jam_pembelian_belum_diterima">Silahkan Hubungi CS jika dalam 1x24 jam pembelian belum diterima</string>
+    <string name="produk">Produk</string>
+    <string name="pilih_produk">Pilih Produk</string>
+    <string name="masukan_nomor">Masukan Nomor</string>
+    <string name="masukan_nomors">Masukan nomor</string>
+    <string name="nomor_pelanggan_minimal_7_karakter">Nomor Pelanggan minimal 7 karakter</string>
+    <string name="nomor_pelanggan">Nomor Pelanggan</string>
+    <string name="silahkan_lakukan_pembayaran_sebelum_tanggal_tersebut">Silahkan lakukan pembayaran sebelum tanggal tersebut</string>
+    <string name="nominal_diatas_adalah_nominal_untuk_pengajuan_limit_baru">Nominal diatas adalah nominal untuk pengajuan limit</string>
+    <string name="nama_pemilik">Nama Pemilik</string>
+    <string name="masukan_nama_pemilik">Masukan Nama Pemilik</string>
+    <string name="nama_konter">Nama Konter</string>
+    <string name="masukan_nama_konter">Masukan Nama Konter</string>
+    <string name="email">Email</string>
+    <string name="masukan_email">Masukan Email</string>
+    <string name="alamat">Alamat</string>
+    <string name="masukan_alamat">Masukan Alamat</string>
+    <string name="provinsi">Provinsi</string>
+    <string name="pilih_provinsi">Pilih Provinsi</string>
+    <string name="kabupaten_kota">Kabupaten/Kota</string>
+    <string name="pilih_kabupaten_kota">Pilih Kabupaten / Kota</string>
+    <string name="kecamatan">Kecamatan</string>
+    <string name="pilih_kecamatan">Pilih Kecamatan</string>
+    <string name="kelurahan">Kelurahan</string>
+    <string name="pilih_kelurahan">Pilih Kelurahan</string>
+    <string name="kode_pos">Kode Pos</string>
+    <string name="pilih_kode_pos">Pilih Kode Pos</string>
+    <string name="nomor_hanphone">Nomor Hanphone</string>
+    <string name="nomor_yang_dimasukan_digunakan_untuk_login">Nomor yang dimasukan digunakan untuk login</string>
+    <string name="masukan_nomorr">Masukan Nomor</string>
+    <string name="simpan">Simpan</string>
+    <string name="pengajuan_limit">Pengajuan Limit</string>
+    <string name="isi_pengajuan_limit">Isi pengajuan Limit</string>
+    <string name="ajukan">Ajukan</string>
+    <string name="loading">Loading..</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="type">
+        <item>SALDOKU</item>
+        <item>PAYLATTER</item>
+
+    </string-array>
+    <string name="title_activity_detail_pesan">detail_pesan_activity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="poin">Poin Tidak Cukup</string>
+    <string name="poinCukup">Tukar</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_otp_verify">OtpVerify</string>
+    <string name="todo">TODO</string>
+    <string name="daftar">Daftar</string>
+    <string name="tidak_memiliki_akun">Tidak memiliki akun ?</string>
+    <string name="masuk">Masuk</string>
+    <string name="ingat_selalu_saya">Setujui</string>
+    <string name="nomor_telepone">Nomor Telepone</string>
+    <string name="login">Login</string>
+    <string name="masukan_pin">Masukan PIN</string>
+    <string name="kesempatan_memasukan_pin_3_kali">Kesempatan memasukan PIN 3 kali</string>
+    <string name="masukan_pin_lama">Masukan PIN Lama :</string>
+    <string name="masukan_pin_baru">Masukan PIN Baru :</string>
+    <string name="konfirmasi_pin_baru">Konfirmasi PIN Baru :</string>
+    <string name="reset">Reset</string>
+    <string name="nama_pemilikd">Nama Pemilik</string>
+    <string name="masukan_nama_pemilikd">Masukan Nama Pemilik</string>
+    <string name="nama_konterd">Nama Konter</string>
+    <string name="masukan_nama_konterd">Masukan Nama Konter</string>
+    <string name="emaild">Email</string>
+    <string name="masukan_emaild">Masukan Email</string>
+    <string name="alamatd">Alamat</string>
+    <string name="masukan_alamatd">Masukan Alamat</string>
+    <string name="provinsid">Provinsi</string>
+    <string name="pilih_provinsid">Pilih Provinsi</string>
+    <string name="kabupaten_kotad">Kabupaten/Kota</string>
+    <string name="pilih_kabupaten_kotad">Pilih Kabupaten / Kota</string>
+    <string name="kecamatand">Kecamatan</string>
+    <string name="pilih_kecamatand">Pilih Kecamatan</string>
+    <string name="kelurahand">Kelurahan</string>
+    <string name="pilih_kelurahand">Pilih Kelurahan</string>
+    <string name="kode_posf">Kode Pos</string>
+    <string name="pilih_kode_posd">Pilih Kode Pos</string>
+    <string name="nomor_hanphoned">Nomor Hanphone</string>
+    <string name="nomor_yang_dimasukan_digunakan_untuk_logind">Nomor yang didaftarkan digunakan untuk login</string>
+    <string name="masukan_nomord">Masukan Nomor</string>
+    <string name="kode_referal_sales">Kode Referal Sales</string>
+    <string name="masukan_kode_referal">Masukan Kode Referal ( Tidak Wajib )</string>
+    <string name="server_id">Server ID</string>
+    <string name="SRVID00000060">SRVID00000060</string>
+    <string name="pilih_server">Pilih Server</string>
+    <string name="selanjutnya">Selanjutnya</string>
+    <string name="pending">Pending</string>
+    <string name="rp_0">Rp.0</string>
+    <string name="nomor_tujuan">Nomor tujuan</string>
+    <string name="nama">Nama</string>
+    <string name="nominal_produk">Nominal Produk</string>
+    <string name="detail_transaksi">Detail Transaksi</string>
+    <string name="saldo_terpakai">Saldo Terpakai</string>
+    <string name="produkk">Produk</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="waktu">Waktu</string>
+    <string name="nomor_transaksi">ID Transaksi</string>
+    <string name="nomor_sn">Nomor SN</string>
+    <string name="harga_produk">Harga Produk</string>
+    <string name="tutup">Tutup</string>
+    <string name="cetak">Cetak</string>
+    <string name="proses_pendaftaranmu_belum_selesai_yuk_lanjutkan">Proses pendaftaranmu belum selesai yuk lanjutkan..</string>
+    <string name="lanjutkan">Lanjutkan</string>
+    <string name="keluar">Keluar</string>
+    <string name="masukan_pind">Masukan PIN</string>
+    <string name="_3_kali_kesempatan_memasukan_pin">3 Kali kesempatan memasukan PIN</string>
+    <string name="lupa_pin">Lupa PIN</string>
+    <string name="verifikasi">Verifikasi</string>
+    <string name="otpveryf">(Anda telah login dengan device yang berbeda, silahkan masukan OTP yang telah dikirim melalui WA)</string>
+    <string name="masukan_otp">Masukan OTP</string>
+    <string name="kirim_otp">Kirim OTP</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="konfirmasi_pin">Konfirmasi PIN :</string>
+    <string name="selesai">Selesai</string>
+    <string name="masukan_pinn">Masukan PIN :</string>
+    <string name="pin_anda_digunakan_untuk_bertransaksi">PIN anda digunakan untuk bertransaksi</string>
+    <string name="x">x</string>
+    <string name="pilih_bank">Pilih Bank</string>
+    <string name="nomor_rekening">Nomor Rekening</string>
+    <string name="nominal">Nominal</string>
+    <string name="admin">Admin</string>
+    <string name="total">Total</string>
+    <string name="keterangan">Keterangan</string>
+    <string name="konfirmasi">Konfirmasi</string>
+    <string name="transfer">Transfer</string>
+</resources>

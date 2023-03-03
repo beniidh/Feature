@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+        <item
+            android:id="@+id/daftarharga"
+            android:icon="@drawable/list"
+            android:title="Daftar Harga"/>
+        <item
+            android:id="@+id/PengauanServer"
+            android:title="Pengajuan Saldo Server" />
+        <item
+            android:id="@+id/cetakStruk"
+            android:title="Cetak Struk" />
+        <item
+            android:id="@+id/kodeProduk"
+            android:title="Kode Produk" />
+        <item
+            android:id="@+id/tentangKami"
+            android:title="Tentang Kami" />
+        <item
+            android:id="@+id/Syaratdank"
+            android:title="Syarat dan ketentuan" />
+        <item
+            android:id="@+id/keluar"
+            android:title="Keluar" />
+</menu>

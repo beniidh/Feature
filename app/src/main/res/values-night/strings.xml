@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="keteranganOTP">Untuk mendapatkan Kode OTP silahkan pilih salah satu metode dibawah ini :</string>
+    <string name="otp">Kode telah dikirim ke Email, silahkan cek Email Anda</string>
+    <string name="syaratketentuan">Terima kasih Anda telah mengakses situs atau mengunduh,
+        menggunakan layanan, produk dan/atau aplikasi (“Aplikasi”)  %1$s. Pada saat Anda
+        mengakses, mengunduh atau menggunakan Aplikasi  %2$s maka Syarat dan Ketentuan ini
+        berlaku terhadap Anda. Dengan melanjutkan mengakses, mengunduh atau menggunakan Aplikasi
+         %3$s, Anda mengakui dan menyetujui bahwa Anda telah membaca dengan teliti, memahami,
+        menerima dan menyetujui seluruh Syarat dan Ketentuan ini yang akan berlaku sebagai
+        perjanjian antara Anda dengan Kami. Aplikasi ini juga menampilkan daftar kontak anda untuk keperluan transaksi. Syarat dan Ketentuan ini juga berlaku setiap kali
+        Anda melakukan transaksi menggunakan Aplikasi  %4$s melalui mitra penyedia
+        platform lain yang menandatangani perjanjian kerjasama dengan Kami dan menggunakan
+        Aplikasi  %5$s sebagai salah satu metode pembayaran (“Partner  %6$s”)</string>
+
+
+</resources>

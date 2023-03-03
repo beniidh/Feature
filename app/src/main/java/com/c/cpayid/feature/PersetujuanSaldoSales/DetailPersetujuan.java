@@ -1,0 +1,77 @@
+package com.c.cpayid.feature.PersetujuanSaldoSales;
+
+import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.os.Bundle;
+import android.text.Html;
+import android.widget.Button;
+import android.widget.TextView;
+
+import com.c.cpayid.feature.BaseActivity;
+import com.c.cpayid.feature.Helper.utils;
+import com.c.cpayid.feature.R;
+import com.c.cpayid.feature.engine.ApplicationVariable;
+import com.c.cpayid.feature.engine.ColorMap;
+import com.c.cpayid.feature.engine.DrawableMap;
+
+import java.util.Objects;
+
+public class DetailPersetujuan extends BaseActivity {
+    Button idSetujuDetail, idTolakDetail;
+
+    public static Activity detailPersetujuan;
+    TextView saldopengajuanPersetujuan;
+
+    @SuppressLint("UseCompatLoadingForDrawables")
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_detail_persetujuan);
+
+        String color = Integer.toHexString(ColorMap.getColor(ApplicationVariable.applicationId, "green")).toUpperCase();
+        String color2 = "#" + color.substring(1);
+        Objects.requireNonNull(getSupportActionBar()).setTitle(Html.fromHtml("<font color='" + color2 +"'><b>Detail <b></font>"));
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeAsUpIndicator(DrawableMap.changeColorVector(getResources().getDrawable(R.drawable.ic_baseline_arrow_back_24), "green"));
+
+        detailPersetujuan = this;
+
+        idTolakDetail = findViewById(R.id.idTolakDetail);
+        idSetujuDetail = findViewById(R.id.idSetujuDetail);
+        String id = getIntent().getStringExtra("ID");
+        String harga = getIntent().getStringExtra("Saldo");
+        saldopengajuanPersetujuan = findViewById(R.id.saldopengajuanPersetujuan);
+        saldopengajuanPersetujuan.setText(utils.ConvertRP(harga));
+
+        idTolakDetail.setOnClickListener(v -> showModal("REJECT SALES", id, harga));
+        idSetujuDetail.setOnClickListener(v -> showModal("PENDING ADMIN", id, harga));
+    }
+
+    @Override
+    public void settingLayout() {
+        super.settingLayout();
+        ((TextView) findViewById(R.id.tvHistoryLabel)).setTextColor(ColorMap.getColor(ApplicationVariable.applicationId, "green"));
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
+
+
+    public void showModal(String status, String id, String saldo) {
+        ModalPinPersetujuan modalPinPersetujuan = new ModalPinPersetujuan();
+        Bundle bundle = new Bundle();
+        bundle.putString("ID", id);
+        bundle.putString("STATUS", status);
+        bundle.putString("SALDO", saldo);
+        modalPinPersetujuan.setArguments(bundle);
+        modalPinPersetujuan.show(getSupportFragmentManager(), "modalapprove");
+    }
+}

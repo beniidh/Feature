@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="18dp"
+    tools:context=".Profil.Poin.Point">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10sp"
+            android:fontFamily="@font/mukta"
+            android:text="Pilih Tanggal"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+
+        <EditText
+            android:id="@+id/idpointtanggalEditText"
+            android:layout_width="120sp"
+            android:layout_height="34sp"
+            android:background="@drawable/bg_saldo"
+            android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+            android:elevation="1dp"
+            android:gravity="center"
+            android:paddingStart="8sp"
+            tools:ignore="RtlSymmetry" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTotalPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/bg_button_homesaldo"
+        android:orientation="vertical"
+        android:padding="10sp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Point"
+            android:textSize="15dp"
+            android:fontFamily="@font/opensanssemisold"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/idpointTotalPointTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="26"
+            android:fontFamily="@font/opensansreguler"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRecyclePoint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        tools:listitem="@layout/list_reward" />
+
+
+</LinearLayout>

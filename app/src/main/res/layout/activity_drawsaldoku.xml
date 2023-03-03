@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    tools:context=".konter.DrawSaldo.DrawMyBalance">
+
+
+    <LinearLayout
+        android:id="@+id/lineartransfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/namatarik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensanssemisold"
+            android:text="Tarik saldo : Beni Cell"
+            android:textSize="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:fontFamily="@font/opensanssemisold"
+            android:text="Nominal Saldo (Rp)"
+            android:textSize="17dp" />
+
+        <EditText
+            android:id="@+id/nominaltarikSaldo"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/bg_edittextlogin"
+            android:hint="Masukan Nominal"
+            android:textSize="15dp"
+            android:fontFamily="@font/opensansreguler"
+            android:inputType="number"
+            android:paddingStart="5sp" />
+
+        <TextView
+            android:id="@+id/jumlahTransferK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:fontFamily="@font/opensansreguler"
+            android:paddingVertical="3dp" />
+
+        <Button
+            android:id="@+id/buttonTarikSaldo"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:layout_marginTop="25sp"
+            android:background="@drawable/bg_button_login2"
+            android:text="Tarik Saldo"
+            android:fontFamily="@font/opensanssemisold"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+    </LinearLayout>
+</RelativeLayout>

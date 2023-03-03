@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.RekapsaldoFragment.Komponen.SemuaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/tanggalstartR"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10sp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_shape"
+            android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+            android:elevation="1dp"
+            android:focusable="false"
+            android:fontFamily="@font/poppins"
+            android:hint="start"
+            android:paddingStart="10sp"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/tanggalendR"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5sp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_shape"
+            android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+            android:elevation="1dp"
+            android:focusable="false"
+            android:fontFamily="@font/poppins"
+            android:hint="end"
+            android:paddingStart="10sp"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/pilihType"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:elevation="1dp"
+            android:entries="@array/type"
+            android:layout_marginVertical="25sp"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/ButtonfilterR"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bgsalessaldoku"
+            android:layout_height="35sp"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="0.5"
+            android:text="Filter"
+            android:textAllCaps="false"
+            android:textSize="9sp" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/reyRekapSaldo"
+        tools:listitem="@layout/listrekapsaldo"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:elevation="1dp"
+
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/KonterProfil"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/defaultuser"/>
+<!--        android:text="@string/userProfil" />-->
+
+    <LinearLayout
+        android:id="@+id/linList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/KonterProfil"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sales_namapemilik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Rahayu"
+            android:textSize="15dp"
+            android:fontFamily="@font/opensanssemisold"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sales_namakonter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:text="Abata Amanjaya"
+            android:textSize="15dp"
+            android:fontFamily="@font/opensanssemisold"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/sales_codekonter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:text="CD0123545454545" />
+
+        <TextView
+            android:id="@+id/markupKonter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/opensansreguler"
+            android:textSize="15dp"
+            android:layout_marginTop="5dp"
+            android:text="Mark Up : 100" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/moreevent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_baseline_more_vert_24" />
+
+    <TextView
+        android:id="@+id/SaldokuList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linList"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/opensansreguler"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="15dp"
+        android:text="Saldoku : Rp 5000000"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/SaldoServerList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linList"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/opensansreguler"
+        android:layout_toEndOf="@+id/SaldokuList"
+        android:text="Server : Rp 50000000"
+        android:textColor="@color/black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/SaldokuList"
+        android:layout_marginTop="3dp"
+        android:background="@color/gray2"
+
+        />
+</RelativeLayout>

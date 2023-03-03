@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_putih"
+    android:orientation="vertical"
+    android:padding="18dp"
+    android:layout_height="match_parent">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        app:lottie_url="https://assets5.lottiefiles.com/packages/lf20_jknsvwy1.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:layout_height="300dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="14dp"
+        android:fontFamily="@font/opensansreguler"
+        android:text="Fitur Ini Akan Segera Tersedia,Nantikan Fitur QRIS untuk pengalaman pembayaran yang lebih cepat dan efisien."
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/mengerti"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:text="Mengerti"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_button_login2"/>
+
+</LinearLayout>

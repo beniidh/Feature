@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="17dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilih Tipe"
+        android:textSize="20dp"
+        android:textColor="@color/green"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray2"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        />
+    <SearchView
+        android:id="@+id/search_markup"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:elevation="1dp"
+        android:paddingStart="5dp"
+        android:hint="Cari Kabupaten"
+        android:background="@drawable/bg_search_modal"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ReyMarkup"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        tools:listitem="@layout/list"
+        android:layout_marginTop="16dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tutupMarkup"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_login"
+            android:text="Tutup"
+            android:textColor="@color/green"
+            />
+
+        <Button
+            android:id="@+id/pilihMarkup"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_login2"
+            android:text="Pilih"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

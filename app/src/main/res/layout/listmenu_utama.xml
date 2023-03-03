@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Linlistmenu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:gravity="center"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iconmenuutama"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ecard" />
+
+    <TextView
+        android:id="@+id/titlemenuutama"
+        android:layout_width="60dp"
+        android:layout_height="35sp"
+        android:padding="2dp"
+        android:layout_marginTop="5dp"
+        android:textSize="10dp"
+        android:fontFamily="@font/opensanssemisold"
+        android:text="Uang Elektronik"
+        android:textAlignment="center"
+        android:textColor="@color/green3"
+
+        />
+
+
+</LinearLayout>

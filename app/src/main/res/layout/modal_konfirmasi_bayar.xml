@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_putih"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/opensansreguler"
+        android:text="Top up Saldoku"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Jumlah  : "
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensanssemisold"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Rp 25000"
+            android:id="@+id/jumlahtopup"
+            android:textSize="17dp"
+            android:fontFamily="@font/opensansreguler"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Metode : "
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/opensanssemisold"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Transfer BRI"
+            android:textSize="17dp"
+            android:id="@+id/metodetopup"
+            android:fontFamily="@font/opensansreguler"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="35dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/batalTopup"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_login2"
+            android:text="Batal"
+            android:textAllCaps="false"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:id="@+id/lanjutTopup"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_login3"
+            android:text="Lanjutkan"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:gravity="center"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:id="@+id/linearKlikk"
+    android:elevation="2dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="8dp"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/nameList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensanssemisold"
+        android:text="Data"
+        android:textSize="19dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/gangguanBank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gangguan"
+        android:visibility="gone"
+        android:textColor="@color/red"
+        android:textAlignment="textEnd"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

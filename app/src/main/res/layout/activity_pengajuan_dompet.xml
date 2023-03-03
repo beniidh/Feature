@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="18dp"
+    tools:context=".PengajuanLimit.PengajuanDompet">
+
+    <LinearLayout
+        android:id="@+id/linn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Limit Saldo Server Saat ini"
+            android:textAlignment="center"
+            android:fontFamily="@font/opensanssemisold"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/saldoServerSaatini"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/opensanssemisold"
+            android:text="RP 100.000"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:fontFamily="@font/opensansreguler"
+                android:text="Isi pengajuan Limit Baru "
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/idPengajuanLimitEditText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+             android:hint="Rp. 23XXX"
+                android:textSize="15dp"
+                android:fontFamily="@font/opensansreguler"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:fontFamily="@font/opensansreguler"
+                android:text="@string/nominal_diatas_adalah_nominal_untuk_pengajuan_limit_baru"
+                android:textSize="13dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensanssemisold"
+            android:text="Pengajuan Limit Dompet"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="3dp"
+            android:background="@color/gray3" />
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRecyclePengajuanDompet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/idAjukanLimitButton"
+        android:layout_below="@id/linn"
+        android:layout_marginTop="10dp"
+        tools:listitem="@layout/list_pengajuandompet" />
+
+    <Button
+        android:id="@+id/idAjukanLimitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button_login2"
+        android:text="Ajukan"
+        android:fontFamily="@font/opensanssemisold"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+</RelativeLayout>
